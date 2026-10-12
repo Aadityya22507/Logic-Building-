@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void Display(iNo)
+{
+    int iCnt = 0;
+
+    for(iCnt = -iNo ; iCnt < 0 ; iCnt++)
+    {
+        printf("%d\t%d\t",iCnt,-iCnt);    
+    }
+    
+    printf("\n");
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("enter number:\n");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
+}

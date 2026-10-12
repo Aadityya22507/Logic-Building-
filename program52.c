@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void DisplayDigits(int iNo1)
+{
+    int iDigit = 0;
+
+    while(iNo1 > 0)
+    {
+        iDigit = iNo1 % 10;
+        printf("%d\n",iDigit);
+        iNo1 = iNo1 / 10;     
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("enter number:\n");
+    scanf("%d",&iValue);
+
+    DisplayDigits(iValue);
+
+
+    return 0;
+}
